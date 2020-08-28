@@ -80,5 +80,4 @@ for i in range(len(path)):
     # scipy.misc.toimage(outputs * 255, high=255, low=0, cmin=0, cmax=255).save(img_name)
     outputs = np.minimum(outputs, 1.0)
     outputs = np.maximum(outputs, 0.0)
-    utls.imwrite(img_name, outputs)
-    save_images(os.path.join('/content/drive/My Drive/MBLLEN enhanced images/', '%s_kindle.png' % (img_name)), outputs)
+    utls.imwrite('/content/drive/My Drive/MBLLEN enhanced images/', outputs)
