@@ -80,4 +80,4 @@ for i in range(len(path)):
     # scipy.misc.toimage(outputs * 255, high=255, low=0, cmin=0, cmax=255).save(img_name)
     outputs = np.minimum(outputs, 1.0)
     outputs = np.maximum(outputs, 0.0)
-    utls.imwrite(img_name, outputs)
+    utls.imwrite(result_folder+'/' + filename, outputs)
